@@ -3,7 +3,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Markom\\QueueManager\\": "src/"
+            "Markom\\QueueManagerBundle\\": "src/"
         }
     },
     "authors": [

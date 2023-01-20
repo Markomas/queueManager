@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Markom\QueueManager\DependencyInjection;
+namespace Markom\QueueManagerBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

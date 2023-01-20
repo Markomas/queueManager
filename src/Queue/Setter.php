@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Markom\QueueManager\Queue;
+namespace Markom\QueueManagerBundle\Queue;
 
 class Setter
 {
