@@ -3,7 +3,7 @@
         'name' => 'markom/queue-manager',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'b711653569bf3df6ecc15f8223b5269f2eb455db',
+        'reference' => '15371bb4533d4590c2c697b18a1e879819b19b8f',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'markom/queue-manager' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'b711653569bf3df6ecc15f8223b5269f2eb455db',
+            'reference' => '15371bb4533d4590c2c697b18a1e879819b19b8f',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

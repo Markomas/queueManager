@@ -3,7 +3,9 @@ declare(strict_types=1);
 
 namespace Markom\QueueManager;
 
-class QueueManager extends \Symfony\Component\HttpKernel\Bundle\AbstractBundle
+use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
+
+class QueueManager extends AbstractBundle
 {
 
 }
