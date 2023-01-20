@@ -1,0 +1,19 @@
+{
+    "name": "markom/queue-manager",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Markom\\QueueManager\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Markom",
+            "email": "mariukaz@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "symfony/framework-bundle": "^6.2"
+    }
+}
