@@ -1,3 +1,5 @@
 services:
-  Markom\QueueManagerBundle\Queue\Setter:
-    class: Markom\QueueManagerBundle\Queue\Setter
+  Markom\QueueManagerBundle\:
+    resource: '../src/'
+    exclude:
+      - '../src/DependencyInjection/'

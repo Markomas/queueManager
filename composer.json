@@ -13,7 +13,10 @@
         }
     ],
     "require": {
-        "php": ">=7.1",
-        "symfony/framework-bundle": "^6.2"
+        "php": ">=8.2",
+        "symfony/framework-bundle": "^6.2",
+        "pda/pheanstalk": "^4.0",
+        "jobcloud/php-kafka-lib": "~2.0",
+        "symfony/serializer": "^6.2"
     }
 }

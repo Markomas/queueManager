@@ -1,11 +1,16 @@
 <?php
-declare(strict_types=1);
 
-namespace Markom\QueueManagerBundle\Queue;
+namespace App\Queue;
 
-class Setter
+use App\Queue\Transport\TransportInterface;
+
+readonly class Setter
 {
-    public function run() {
-        dump('Hello World');
+    public function __construct(private TransportInterface $transport){}
+
+    public function set(Payload $param): void
+    {
+        $param->setPackageDate(new \DateTimeImmutable('now'));
+        $this->transport->push($param);
     }
 }
