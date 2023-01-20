@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'markom/queue-manager',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => 'b711653569bf3df6ecc15f8223b5269f2eb455db',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'markom/queue-manager' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => 'b711653569bf3df6ecc15f8223b5269f2eb455db',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
