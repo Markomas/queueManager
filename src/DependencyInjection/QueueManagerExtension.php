@@ -12,6 +12,7 @@ class QueueManagerExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container)
     {
+        dump('load');
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../../config'));
         $loader->load('services.yaml');
     }
