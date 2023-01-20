@@ -5,7 +5,7 @@ namespace Markom\QueueManagerBundle;
 
 use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 
-class QueueManager extends AbstractBundle
+class QueueManagerBundle extends AbstractBundle
 {
 
 }
