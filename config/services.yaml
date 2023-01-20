@@ -1,0 +1,3 @@
+services:
+  Markom\QueueManager\Queue\Setter:
+    class: Markom\QueueManager\Queue\Setter
