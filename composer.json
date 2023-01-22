@@ -1,4 +1,10 @@
 {
+    "repositories": [
+        {
+            "url": "git@github.com:Markomas/php-kafka-lib.git",
+            "type": "git"
+        }
+    ],
     "name": "markom/queue-manager",
     "license": "MIT",
     "autoload": {
@@ -16,7 +22,8 @@
         "php": ">=8.2",
         "symfony/framework-bundle": "^6.2",
         "pda/pheanstalk": "^4.0",
-        "jobcloud/php-kafka-lib": "~2.0",
-        "symfony/serializer": "^6.2"
+        "symfony/serializer": "^6.2",
+        "jobcloud/php-kafka-lib": "dev-main",
+        "symfony/serializer-pack": "^1.1"
     }
 }
