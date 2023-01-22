@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Queue;
+namespace Markom\QueueManagerBundle\Queue;
 
 interface HandlerInterface
 {

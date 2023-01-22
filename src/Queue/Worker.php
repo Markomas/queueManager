@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Queue;
+namespace Markom\QueueManagerBundle\Queue;
 
-use App\Queue\Transport\TransportInterface;
+use Markom\QueueManagerBundle\Queue\Transport\TransportInterface;
 use Psr\Log\LoggerInterface;
 
 readonly class Worker

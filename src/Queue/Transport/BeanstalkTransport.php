@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Queue\Transport;
+namespace Markom\QueueManagerBundle\Queue\Transport;
 
-use App\Queue\Payload;
+use Markom\QueueManagerBundle\Queue\Payload;
 use Pheanstalk\Job;
 use Pheanstalk\Pheanstalk;
 use Symfony\Component\Serializer\SerializerInterface;
