@@ -5,7 +5,7 @@ namespace Markom\QueueManagerBundle\Queue;
 use Markom\QueueManagerBundle\Queue\Transport\TransportInterface;
 use Psr\Log\LoggerInterface;
 
-readonly class Worker
+readonly class Worker implements WorkerInterface
 {
     public function __construct(private TransportInterface $transport, private array $queueActions, private LoggerInterface $logger) {}
     public function run(string $tube): void

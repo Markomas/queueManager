@@ -4,7 +4,7 @@ namespace Markom\QueueManagerBundle\Queue;
 
 use Markom\QueueManagerBundle\Queue\Transport\TransportInterface;
 
-readonly class Setter
+readonly class Setter implements SetterInteface
 {
     public function __construct(private TransportInterface $transport){}
 
