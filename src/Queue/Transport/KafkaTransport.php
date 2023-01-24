@@ -145,6 +145,11 @@ class KafkaTransport implements TransportInterface
             $conf = new Conf();
             $conf->set('metadata.broker.list', $this->broker);
             $conf->set('group.id', $this->conf['group.id'] . '_metadata');
+
+            $conf->setErrorCb(function ($kafka, $err, $reason) {
+                $this->logger->log($err, $reason);
+            });
+
             $consumer = new KafkaConsumer($conf);
             //$consumer = $this->rdConsumerKafka;
             $this->metadata = $consumer->getMetadata(true, null, 1000);
