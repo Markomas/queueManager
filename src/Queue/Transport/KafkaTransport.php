@@ -158,7 +158,7 @@ class KafkaTransport implements TransportInterface
             $this->metadata = $consumer->getMetadata(true, null, 1000);
         }
         foreach ($this->metadata->getTopics() as $topic) {
-            if(fnmatch($name, $topic->getTopic())) {
+            if(preg_match($name, $topic->getTopic())) {
                 $topics[] = $topic->getTopic();
             }
         }
