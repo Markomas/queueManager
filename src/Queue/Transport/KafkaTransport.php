@@ -99,7 +99,7 @@ class KafkaTransport implements TransportInterface
                 'compression.codec' => 'gzip'
             ])
             ->withLogCallback(function ($kafka, $errId, $msg) {
-                $this->logger->error($msg);
+                $this->logger->error($errId, $msg);
             })
             ->build();
     }
@@ -111,7 +111,10 @@ class KafkaTransport implements TransportInterface
         $consumerBuilder = $builder->create()
             ->withConsumerGroup($this->conf['group.id'])
             ->withConsumerType(CustomKafkaConsumerBuilder::CONSUMER_TYPE_LOW_LEVEL)
-            ->withAdditionalBroker($this->broker);
+            ->withAdditionalBroker($this->broker)
+            ->withLogCallback(function ($kafka, $errId, $msg) {
+                $this->logger->error($errId, $msg);
+            });
         foreach ($topics as $topic) {
             $consumerBuilder = $consumerBuilder->withAdditionalSubscription($topic);
         }
